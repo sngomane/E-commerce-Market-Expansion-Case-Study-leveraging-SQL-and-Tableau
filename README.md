@@ -17,7 +17,7 @@ Magist is a Brazilian Software as a Service company that offers a centralized or
 2.	Tableau 
 3.	Google slides and PowerPoint 
 # Key Learnings:
-How to jointly use SQL and Tableau effectively.  For example, in this case study, SQL was great for understanding the relationship between the data tables and for generating quick insights and calculations. However, since Magist’s database was straightforward with relatively fewer tables to manage it was a lot more efficient to download all the tables and generate the final insights and plots on Tableau. 
+How to jointly use SQL and Tableau effectively.  For example, in this case study, SQL was great for understanding the relationship between the data tables and for generating quick insights and calculations. However, since Magist’s database was straightforward with relatively fewer tables to manage it was a lot more efficient to download all the tables and generate the final insights and plots using Tableau. 
 # Key Challanges:
 Dealing with information noise. The class was simply provided with Magist’s database, and it took some time to understand which information and tables were relevant for this case study. However, after initial exploration of the data and focusing on the main business question it was clear which data contains the necessary information for the strategic insights and recommendation.
 
