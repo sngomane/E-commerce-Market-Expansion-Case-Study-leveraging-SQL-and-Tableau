@@ -1,0 +1,117 @@
+USE magist;
+SELECT * FROM products 
+-- Magist has various of product catorgories. We will probably focus on the tech ones i.e electronico and informatico accesoria */
+
+SELECT * FROM product_category_name_translation;
+SELECT * FROM sellers;
+SELECT * FROM customers;
+SELECT * FROM geo;
+SELECT * FROM orders;
+-- Magist’s sales are concentrated in the east of Brazil 
+
+SELECT * FROM order_items;
+SELECT * FROM order_reviews;
+SELECT COUNT(order_id)FROM orders;
+--  They have 99441orders 
+
+--  Are orders actually delivered?
+SELECT * FROM orders;
+SELECT COUNT(order_status) FROM orders;
+SELECT COUNT(order_status),order_status FROM orders GROUP BY order_status;
+/*96478 are delivered   97% are delivered 
+609 are unavailable    less than 0.63% are unavailable 
+1107 are shipped 
+625 are cancelded  0.63 % are cancelled 
+314 invoiced 
+301 are processed 
+2 approved */
+
+--Is Magist experiencing user growth?
+SELECT 
+YEAR(order_purchase_timestamp) AS Year, MONTH(order_purchase_timestamp) AS Month, count(customer_id)
+FROM
+    orders GROUP BY year, Month ORDER BY year, Month;
+--orders peaked in 2018. would be cool to see by which segements are growing the most
+
+--How many products are there in the products table?
+SELECT * FROM products;
+SELECT COUNT(DISTINCT (product_id)) FROM products;
+--32951 based on product id
+
+--Which are the categories with most products?
+SELECT 
+    COUNT(product_id) AS products, product_category_name
+FROM
+    products
+GROUP BY product_category_name
+ORDER BY products DESC;
+--cama mesa_bahno,whuch I believe is home and bathroom products. Basically homegoods and furniture it seems 
+--How many of those products were present in actual transactions?
+SELECT COUNT(DISTINCT product_id) FROM products;
+SELECT COUNT(DISTINCT product_id) FROM order_items;
+-- there are 32951 product IDs in products 112650 from order items. 
+
+--What’s the price for the most expensive and cheapest products?
+SELECT MAX(price), MIN(price)FROM order_items ORDER BY price;
+-- Max price 6735, Min price 0.85 per product 
+
+SELECT MAX(payment_value), MIN(payment_Value) FROM order_payments;
+SELECT * FROM Orders;
+
+--What are the highest and lowest payment values?
+SELECT * FROM order_payments 
+SELECT MAX(payment_value), MIN(payment_Value) FROM order_payments;
+--13664.1 MAX and 0 for min by order basket
+--Analysing sellers and tech products 
+SELECT 
+    YEAR(shipping_limit_date) AS year,
+    MONTH(shipping_limit_date) AS month,
+    COUNT(Seller_id)
+FROM
+    order_items
+GROUP BY year , month
+ORDER BY year , month
+--it seems the total for all types of sellers are increasing over time 
+-- which products can be considered tech products 
+SELECT *  FROM product_category_name_translation;
+SELECT * FROM product_category_name_translation ORDER BY product_category_name_english;
+SELECT COUNT( DISTINCT seller_id) FROM order_items;
+/*  The categories in portugese and english because I decided to do joins with only two tables....
+audio =	audio
+pcs=	computers
+informatica_acessorios =computers_accessories
+eletronicos =	electronics
+telefonia_fixa =fixed_telephony
+tablets_impressao_imagem =tablets_printing_image
+telefonia= telephony
+maybe consoles_games =consoles_games?
+*/
+-- how many tech sellers does Magist have 
+
+SELECT seller_id, product_id FROM sellers AS s LEFT JOIN order_items AS o USING (seller_id);
+SELECT * FROM PRODUCTS;
+SELECT 
+    seller_id, order_id, product_category_name
+FROM
+    sellers AS s
+        LEFT JOIN
+    order_items AS o USING (seller_id)
+        LEFT JOIN
+    products AS p USING(product_id) WHERE `product_category_name`IN ('audio','pcs','informatica_acessorios', 'eletronicos','telefonia_fixa','tablets_impressao_imagem','telefonia');
+     SELECT 
+    COUNT( DISTINCT seller_id)
+FROM
+    sellers AS s
+        LEFT JOIN
+    order_items AS o USING(seller_id)
+        LEFT JOIN
+    products AS p USING (product_id)
+WHERE
+    `product_category_name` IN ('audio' , 'pcs',
+        'informatica_acessorios',
+        'eletronicos',
+        'telefonia_fixa',
+        'tablets_impressao_imagem',
+        'telefonia');
+
+
