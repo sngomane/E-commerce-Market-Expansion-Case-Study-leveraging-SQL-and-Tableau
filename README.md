@@ -10,7 +10,7 @@ Key questions for Eniac’s executive team:
 Magist is a Brazilian Software as a Service company that offers a centralized order management system to connect small and medium-sized stores with the biggest Brazilian marketplaces. In addition, Magist provides after-sales services such as stock and warehouse management, product shipment, and customer service related to the shipment
 
 # Languages and Libraries used:
-1.	SQL database and MySQL syntax. Please see attached Magist’s relational database_schema_diagram and Magits’s database explained which both explain the relationship between respective tables in Magist’s database. *Please see attached in this repository a sample of MySQL code utilised in this project.*
+1.	SQL database and MySQL syntax. Please see attached Magist’s relational database_schema_diagram and Magits’s database explained which both explain the relationship between respective tables in Magist’s database. ** Please see attached in this repository a sample of MySQL code utilised in this project. **
 2.	Tableau 
 3.	Google slides and PowerPoint
 
