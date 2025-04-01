@@ -5,9 +5,10 @@ It investigates and recommends whether Eniac (a Spanish e-commerce retailer) sho
 [Please see final presentation](https://github.com/sngomane/E-commerce-Market-Expansion-Case-Study-leveraging-SQL-and-Tableau/blob/main/Final%20strategic%20recommendation_presentation.pdf)
 
 ## Languages and Libraries used:
-1.	SQL database and MySQL syntax. Please see attached Magist’s relational database_schema_diagram and Magits’s database explained which both explain the relationship between respective tables in Magist’s database. **Please see attached in this repository a sample of MySQL code utilised in this project.**
-2.	Tableau 
-3.	Google slides and PowerPoint
+1.	SQL database and MySQL syntax.
+[Please see sample of MySQL code](https://github.com/sngomane/E-commerce-Market-Expansion-Case-Study-leveraging-SQL-and-Tableau/blob/main/Sample%20of%20MySQL%20codeP)
+3.	Tableau 
+4.	Google slides and PowerPoint
 
 ## Arriving at the strategic recommendation:
 1.	Analysed Magist’s database to explore Magist’s business operations 
