@@ -1,6 +1,7 @@
 # Summary:
 The following repository documents a business case study analysis carried out as part of The Data Analytics Intensive Bootcamp curriculum at WBS coding school.
 It investigates and recommends whether Eniac (a Spanish e-commerce retailer) should sign an expansion deal with Magist (a Brazilian e-commerce retailer). The final deliverable was a 5-minute (mock) presentation to Eniac’s CEO. 
+
 [Please see final presentation](https://github.com/sngomane/E-commerce-Market-Expansion-Case-Study-leveraging-SQL-and-Tableau/blob/main/Final%20strategic%20recommendation_presentation.pdf)
 
 ## About Eniac:
