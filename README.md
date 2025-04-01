@@ -9,6 +9,8 @@ It investigates and recommends whether Eniac (a Spanish e-commerce retailer) sho
 
 [Please see sample of my MySQL code](https://github.com/sngomane/E-commerce-Market-Expansion-Case-Study-leveraging-SQL-and-Tableau/blob/main/Sample%20of%20MySQL%20code)
 
+[Please see Magist's relational database schema](https://github.com/sngomane/E-commerce-Market-Expansion-Case-Study-leveraging-SQL-and-Tableau/blob/main/Magist's%20relational%20database_%20schema_diagram.pdf)
+
 
 3.	Tableau 
 4.	Google slides and PowerPoint
