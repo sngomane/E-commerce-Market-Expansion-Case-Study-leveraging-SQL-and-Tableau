@@ -19,14 +19,14 @@ How to jointly use SQL and Tableau effectively.  For example, in this case study
 ## Key Challanges:
 Dealing with information noise. The class was simply provided with Magist’s database, and it took some time to understand which information and tables were relevant for this case study. However, after initial exploration of the data and focusing on the main business question it was clear which data contains the necessary information for the strategic insights and recommendation.
 
-## Additional Case-Study Background
+## Additional Background Information
 
 ### About Eniac:
 Eniac is an online marketplace specializing in Apple-compatible accessories. It was founded ten years ago in Spain and is currently exploring expanding to the Brazilian market. However, the company doesn’t have ties with local providers, package delivery services, or customer service agencies. Creating these ties and knowing the market would take a lot of time, while the board of directors has requested the expansion to happen within the next year.
 Key questions for Eniac’s executive team: 
 1.	Eniac’s catalogue is 100% tech products and heavily based on Apple-compatible accessories. It is not clear whether Magist is a good partner for these high-end tech products.
 2.	Among Eniac’s efforts to have happy customers, fast deliveries are key. The delivery fees resulting from Magist’s deal with the public Post Office might be cheap, but at what cost? Are deliveries fast enough?
-3.	
+
 ### About Magist: 
 Magist is a Brazilian Software as a Service company that offers a centralized order management system to connect small and medium-sized stores with the biggest Brazilian marketplaces. In addition, Magist provides after-sales services such as stock and warehouse management, product shipment, and customer service related to the shipment
 
