@@ -7,7 +7,9 @@ It investigates and recommends whether Eniac (a Spanish e-commerce retailer) sho
 ## Languages and Libraries used:
 1.	SQL database and MySQL syntax
 
-[Please see sample of MySQL code](https://github.com/sngomane/E-commerce-Market-Expansion-Case-Study-leveraging-SQL-and-Tableau/blob/main/Sample%20of%20MySQL%20code)
+[Please see sample of my MySQL code](https://github.com/sngomane/E-commerce-Market-Expansion-Case-Study-leveraging-SQL-and-Tableau/blob/main/Sample%20of%20MySQL%20code)
+
+
 3.	Tableau 
 4.	Google slides and PowerPoint
 
